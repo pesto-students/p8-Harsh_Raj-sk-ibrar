@@ -1,0 +1,87 @@
+*{
+    padding-left: 100px;
+    padding-top: 25px;
+} 
+
+
+.container
+{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width:200px;
+    height: 200px;
+    animation-iteration-count: infinite;
+   
+    
+}
+
+.container:hover  .red{
+  animation-name: rotation2;
+    animation-duration: 2s;
+    transform-origin: top left;
+  
+  }
+
+  .container:hover  .blue{
+    animation-name: rotation;
+          animation-duration: 2s;
+          transform-origin: bottom left;
+    
+    }
+
+    .container:hover  .yellow{
+      animation-name: rotation;
+        animation-duration: 2s;
+        transform-origin: top right;
+      
+      }
+
+      .container:hover  .green{
+        animation-name: rotation2;
+         animation-duration: 2s;
+          transform-origin: bottom right;
+        
+        }
+
+h2
+{
+    position: absolute;
+    z-index: -1;
+    padding-left: 15%;
+    padding-top: 8%;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
+  }
+
+  @keyframes rotation2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+.red
+{
+    background-color: red;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.blue
+{
+    background-color: blue;
+}
+.green
+{
+    background-color: green;    
+}
