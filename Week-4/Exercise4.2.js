@@ -16,7 +16,7 @@ Teacher.prototype = new Person();
 
 Teacher.prototype.teach = function(subject)
 {
-    console.log(this.name + " just learned " + subject);
+    console.log(this.name + " is now teaching " + subject);
 }
 
 var me = new Teacher();
