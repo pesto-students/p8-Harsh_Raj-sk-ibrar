@@ -1,0 +1,33 @@
+/* *{
+    padding: 40px;
+} */
+
+.header
+{
+    display: flex;
+    justify-content: center;
+}
+.middle
+{
+    column-count: 2;
+    column-width: 40px;
+    column-gap: 9%;
+    padding: 47px;
+    line-height: 1.6;
+    text-align: left;
+}
+.pathan
+{
+    max-width: 100%;
+    /* height: auto; */
+}
+form
+{
+    line-height: 3;
+    padding-left: 5%;
+}
+@media only screen and (max-width: 500px) {
+    .middle{
+      column-count: 1;
+    }
+  }
